@@ -1,0 +1,59 @@
+.animate-fade {
+    transition: all .3s ease-out;
+}
+.animate-gradient {
+    position:relative;
+    display:block;
+    z-index:20;
+
+    transition:box-shadow .1s ease-in-out;
+    &:before {
+        content: "";
+        display:block;
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        @include linear-gradient($primary-color, darken($primary-color, 10%));
+        z-index:-10;
+        opacity:1;
+
+        transition: box-shadow .1s ease-in-out;
+    }
+
+    &:after {
+        content: "";
+        display:block;
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        @include linear-gradient( lighten($primary-color, 5%), lighten($primary-color, 15%) );
+        z-index:-10;
+        opacity:0;
+
+        transition: opacity .3s ease-in-out;
+    }
+
+    &:hover, &:focus {
+
+        &:after {
+            opacity:1;
+        }
+
+    }
+
+    &:active {
+
+        &:before {
+            box-shadow: inset 0px .25em .5em rgba(0,0,0,0.5);
+        }
+
+        &:after {
+            opacity:0;
+            transition: opacity .1s ease-in-out;
+        }
+    }
+}

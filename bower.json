@@ -1,0 +1,10 @@
+{
+  "name": "doctemplate",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "~1.10.2",
+    "foundation": "~5.2.0",
+    "foundation-icon-fonts": "*"
+  },
+  "devDependencies": {}
+}

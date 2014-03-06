@@ -1,0 +1,47 @@
+$base-gray: #afafaf;
+
+$gray0: darken($base-gray, 25%);
+$gray1: darken($base-gray, 20%);
+$gray2: darken($base-gray, 15%);
+$gray3: darken($base-gray, 10%);
+$gray4: darken($base-gray, 5%);
+$gray5: $base-gray;
+$gray6: lighten($base-gray, 5%);
+$gray7: lighten($base-gray, 10%);
+$gray8: lighten($base-gray, 15%);
+$gray9: lighten($base-gray, 20%);
+$gray10: lighten($base-gray, 25%);
+
+.proto-panel {
+    background-color:$gray5;
+    &.d-0 {
+    	background-color:$gray0;
+    }
+    &.d-1 {
+		background-color:$gray1;
+    }
+    &.d-2 {
+		background-color:$gray2;
+    }
+    &.d-3 {
+		background-color:$gray3;
+    }
+    &.d-4 {
+		background-color:$gray4;
+    }
+    &.l-0 {
+		background-color:$gray6;
+    }
+    &.l-1 {
+		background-color:$gray7;
+    }
+    &.l-2 {
+		background-color:$gray8;
+    }
+    &.l-3 {
+		background-color:$gray9;
+    }
+    &.l-4 {
+		background-color:$gray10;
+    }
+}

@@ -1,0 +1,28 @@
+.top-bar {
+	@media #{$medium-up} {
+		height: auto;
+	}
+	.title-area {
+		margin-bottom: $column-gutter/2;
+	}
+}
+.top-bar-section {
+	@media #{$medium-up} {
+		
+	}
+}
+
+.top-bar-section .primary-navigation {
+	@media #{$medium-up} {
+		width: 100%;
+		margin-bottom: $column-gutter/2;
+		padding: 0 $column-gutter/2;
+	}
+	> li {
+		width: 20%;
+		text-align: center;
+		a {
+			font-size: 1.4rem;
+		}
+	}
+}

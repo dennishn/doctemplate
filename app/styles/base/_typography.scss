@@ -1,0 +1,93 @@
+// _typography.scss
+
+/* ------------------------------------------ *\
+    $font import
+\* ------------------------------------------ */
+
+// This is here you wan't to import all your font imports
+
+
+
+/* ------------------------------------------ *\
+    $Base fonts
+\* ------------------------------------------ */
+
+/*
+* In this file you define all your general styling of fonts.
+* All base font sizes are set in variables.
+*/
+
+$giga-size:         emCalc(83) !default; // .giga
+
+$h1-size:           emCalc(26) !default; // .alpha
+$h2-size:           emCalc(20) !default; // .beta
+$h3-size:           emCalc(18) !default; // .gamma
+$h4-size:           emCalc(16) !default; // .delta
+$h5-size:           emCalc(14) !default; // .epsilon
+$h6-size:           emCalc(12) !default; // .zeta
+
+html,body{
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-family: $header-font-family;
+    .font-secondary {
+    	font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+    }
+}
+
+// h1, .alpha {
+//     font-size: $h1-size;
+//     line-height:1;
+// }
+
+// h2, .beta {
+//     font-size: $h2-size;
+//     line-height:1;
+// }
+
+// h3, .gamma {
+//     font-size: $h3-size;
+//     line-height:1;
+// }
+
+// h4, .delta {
+//     font-size: $h4-size;
+//     line-height:1;
+// }
+
+// h5, .epsilon{
+//     font-size: $h5-size;
+//     line-height:1;
+// }
+// h6, .zeta{
+//     font-size: $h6-size;
+//     line-height:1;
+// }
+
+p {
+    // Whatever is general for the breadtext
+    // font-size: $base-font-size; // Example font size for p ( if nothing changed = 16px )
+}
+
+a {
+    // color: pink;
+}
+
+
+/* ------------------------------------------ *\
+    $Icon Fonts
+\* ------------------------------------------ */
+
+/*
+* Here you want to put all your more special font styling (Use mixing for it)
+*/
+
+// @include font-face(fontname, font-filename);
+
+/* ------------------------------------------ *\
+    $Aditional font styling
+\* ------------------------------------------ */
+
+/*
+* Here you want to put all your more special font styling
+*/

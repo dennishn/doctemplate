@@ -1,0 +1,54 @@
+// Grid
+.row.sg-row {
+	margin-bottom:.5em;
+	.columns {
+		padding:1em;
+		background:#eee;
+		border:1px solid darken(#eee, 5%);
+	}
+}
+// Whitespace
+.sg-whitespace-container {
+	display:block;
+	width:90%;
+	margin: 0 auto 1em auto;
+	border:1px solid darken(#eee, 5%);
+}
+// Color Palettes
+.sg-swatch-container {
+	position:relative;
+	float:left;
+	width:150px;
+	margin:5px;
+	padding:3px;
+	background:#fff;
+	border:1px solid darken(#fff, 10%);
+	.sg-swatch-name {
+		text-align:center;
+	}
+}
+.sg-swatch{
+	position:relative;
+	width:100%;
+	height:150px;
+	background:#fff;
+	.sg-swatch-alternative {
+		position:absolute;
+		width:50%;
+		height:25%;
+		bottom:0;
+		&:first-of-type {
+			left:0;
+		}
+		&:last-of-type {
+			right:0;
+		}
+	}
+	.sg-swatch-modifier {
+		position:absolute;
+		width:50%;
+		height:100%;
+		top:0;
+		right:0;
+	}
+}
