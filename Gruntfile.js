@@ -34,6 +34,7 @@ module.exports = function (grunt) {
                 },
                 files: [
                     '<%= yeoman.app %>/templates/**/*.hbs',
+                    '<%= yeoman.app %>/docs/**/*.md',
                     '{.tmp,<%= yeoman.app %>}/styles/{,*/}*.css',
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
@@ -156,9 +157,12 @@ module.exports = function (grunt) {
         },*/
         'bower-install': {
             app: {
-                html: '<%= yeoman.app %>/templates/layouts/default.hbs',
-                ignorePath: '<%= yeoman.app %>/',
-                fileTypes: {
+                src: [
+					'<%= yeoman.app %>/templates/layouts/default.hbs'
+				],
+				ignorePath: '<%= yeoman.app %>/',
+				exclude:  [ /modernizr/, /jquery/ ],
+				fileTypes: {
 					hbs: {
 						block: /(([\s\t]*)<!--\s*bower:*(\S*)\s*-->)(\n|\r|.)*?(<!--\s*endbower\s*-->)/gi,
 						detect: {
@@ -272,7 +276,8 @@ module.exports = function (grunt) {
                         '*.{ico,png,txt}',
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
-                        'fonts/{,*/}*.*'
+                        'fonts/{,*/}*.*',
+                        'docs/**/*.md'
                     ]
                 }]
             },

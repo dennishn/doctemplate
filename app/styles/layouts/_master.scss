@@ -1,46 +1,22 @@
 body {
-	background: #ffffff; /* Old browsers */
-	background: linear-gradient(to bottom, #ffffff 0%,#f3f3f1 100%); /* W3C */
+	padding-top: $topbar-height;
 }
 
 .container {
-	@include grid-row();
-}
-.page-header {
-	margin-bottom: $column-gutter;
-}
-
-.selected-item .panel.callout {
-	width: 100%;
-	text-align: center;
-	color: #fff;
-	background: $primary-color;
-	border: none;
-}
-.selected-item .header {
-	h3, p {
-		margin: 0;
-	}
-}
-
-.page-options {
-	.button-group {
-		> li a {
-			background: transparent;
-			padding-left: .5rem;
-			padding-right: .5rem;
+	@include structure-grid-row();
+	div[role="flatdoc-menu"] {
+		@include grid-column(3);
+		> ul {
+			@include side-nav();
+		}
+		&.fixed {
+			top: $topbar-height;
 		}
 	}
-}
-
-.card .container {
-	padding: $column-gutter/2;
-	background: #fff;
-	box-shadow: 0 0 5px rgba(0,0,0,0.25);
-	.front, .back {
-		background-color: #fff;
-	}
-	.back {
-		padding: $column-gutter/2;
+	div[role="flatdoc-content"] {
+		@include grid-column(9);
+		&.menu-is-fixed {
+			@include grid-column(9, $offset:3);
+		}
 	}
 }

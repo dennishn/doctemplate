@@ -6,6 +6,14 @@
 		<title>doctemplate</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width">
+
+		<!-- build:js scripts/jquery.js -->
+		<script src="bower_components/jquery/jquery.js"></script>
+		<!-- endbuild -->
+
+		<script src='http://rstacruz.github.io/flatdoc/v/0.8.0/legacy.js'></script>
+ 		<script src='http://rstacruz.github.io/flatdoc/v/0.8.0/flatdoc.js'></script>
+
 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 		<!-- build:css(.tmp) styles/styles.css -->
 		<link rel="stylesheet" href="styles/styles.css">
@@ -13,34 +21,58 @@
 	</head>
 	<body>
 
-		<a href="test.html">test.html</a>
+		<div class="fixed">
+    <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="/">doctemplate v.0.0.1</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+        </ul>
 
-		
-<div class="hero-unit">
-	<h1>'Allo, 'Allo!</h1>
-	<p>You now have</p>
-	<ul>
-		<li>HTML5 Boilerplate</li>
-
-
-		<li>Assemble</li>
-	</ul>
-	Generator created and maintained by <a href="http://twitter.com/jeremie_parker" target="_blank" title="@jeremie_parker" style="text-decoration:none;" class="large inline gapped">@jeremie_parker</a>
-	<a href="http://github.com/p-j" target="_blank" title="@p-j" style="text-decoration:none;" class="large inline gapped">p-j</a>
-	<a href="mailto:yawa@jeremie-parker.com" title="yawa@jeremie-parker.com" style="text-decoration:none; color:#E54C3B;" class="large inline gapped"></a>
+        <section class="top-bar-section">
+            <!-- Left Nav Section -->
+            <ul class="left">
+                <li>
+                    <a href="remote-markdown.html">Remote Markdown Testpage</a>
+                </li>
+                <li>
+                	<a href="local-markdown.html">Local Markdown Testpage</a>
+                </li>
+            </ul>
+        </section>
+    </nav>
 </div>
 
+		<div class="container">
+			<h1>Doc Template</h1>
+<p>A static documentation system using:</p>
+<ul class="square">
+	<li>Assemble</li>
+	<li>Flatdoc</li>
+	<li>Grunt</li>
+	<li>Bower</li>
+	<li>Foundation</li>
+	<li>Foundation Font Icons</li>
+</ul>
+<h2>Big Todo's:</h2>
+<ul class="square">
+	<li>Convert this page to a .md file</li>
+</ul>
 
+		</div>
 
 		<!-- build:js scripts/vendor.js -->
 		<!-- bower:js -->
-		<script src="bower_components/modernizr/modernizr.js"></script>
-		<script src="bower_components/jquery/jquery.js"></script>
 		<script src="bower_components/fastclick/lib/fastclick.js"></script>
-		<script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
 		<script src="bower_components/foundation/js/foundation.js"></script>
 		<!-- endbower -->
+		<script src="scripts/lib/jquery.scrollagent.js"></script>
+		<script src="scripts/lib/jquery.scrollstick.js"></script>
 		<!-- endbuild -->
+
+		<script src='http://rstacruz.github.io/flatdoc/v/0.8.0/legacy.js'></script>
+  		<script src='http://rstacruz.github.io/flatdoc/v/0.8.0/flatdoc.js'></script>
 
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>

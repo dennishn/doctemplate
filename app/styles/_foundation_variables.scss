@@ -1,6 +1,10 @@
 $fi-path: "../bower_components/foundation-icon-fonts/";
 @import "../bower_components/foundation-icon-fonts/foundation-icons";
 
+// Foundation by ZURB
+// foundation.zurb.com
+// Licensed under MIT Open Source
+
 //
 // FOUNDATION SETTINGS
 //
@@ -14,7 +18,7 @@ $fi-path: "../bower_components/foundation-icon-fonts/";
 // $experimental: true;
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
-// for compatibility with brower-based text zoom or user-set defaults.
+// for compatibility with browser-based text zoom or user-set defaults.
 
 // Since the typical default browser font-size is 16px, that makes the calculation for grid size.
 // If you want your base font-size to be different and not have it affect the grid breakpoints,
@@ -32,6 +36,7 @@ $fi-path: "../bower_components/foundation-icon-fonts/";
 // Grid
 
 // $include-html-grid-classes: $include-html-classes;
+// $include-xl-html-grid-classes: false;
 
 // $row-width: rem-calc(1000);
 // $column-gutter: rem-calc(30);
@@ -107,6 +112,112 @@ $fi-path: "../bower_components/foundation-icon-fonts/";
 // $cursor-pointer-value: pointer;
 // $cursor-help-value: help;
 // $cursor-text-value: text;
+
+//
+// TYPOGRAPHY
+//
+
+// $include-html-type-classes: $include-html-classes;
+
+// We use these to control header font styles
+// $header-font-family: $body-font-family;
+// $header-font-weight: normal;
+// $header-font-style: normal;
+// $header-font-color: #222;
+// $header-line-height: 1.4;
+// $header-top-margin: .2rem;
+// $header-bottom-margin: .5rem;
+// $header-text-rendering: optimizeLegibility;
+
+// We use these to control header font sizes
+// $h1-font-size: rem-calc(44);
+// $h2-font-size: rem-calc(37);
+// $h3-font-size: rem-calc(27);
+// $h4-font-size: rem-calc(23);
+// $h5-font-size: rem-calc(18);
+// $h6-font-size: 1rem;
+
+// These control how subheaders are styled.
+// $subheader-line-height: 1.4;
+// $subheader-font-color: scale-color($header-font-color, $lightness: 35%);
+// $subheader-font-weight: 300;
+// $subheader-top-margin: .2rem;
+// $subheader-bottom-margin: .5rem;
+
+// A general <small> styling
+// $small-font-size: 60%;
+// $small-font-color: scale-color($header-font-color, $lightness: 35%);
+
+// We use these to style paragraphs
+// $paragraph-font-family: inherit;
+// $paragraph-font-weight: normal;
+// $paragraph-font-size: 1rem;
+// $paragraph-line-height: 1.6;
+// $paragraph-margin-bottom: rem-calc(20);
+// $paragraph-aside-font-size: rem-calc(14);
+// $paragraph-aside-line-height: 1.35;
+// $paragraph-aside-font-style: italic;
+// $paragraph-text-rendering: optimizeLegibility;
+
+// We use these to style <code> tags
+// $code-color: scale-color($alert-color, $lightness: -27%);
+// $code-font-family: Consolas, 'Liberation Mono', Courier, monospace;
+// $code-font-weight: bold;
+
+// We use these to style anchors
+// $anchor-text-decoration: none;
+// $anchor-font-color: $primary-color;
+// $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
+
+// We use these to style the <hr> element
+// $hr-border-width: 1px;
+// $hr-border-style: solid;
+// $hr-border-color: #ddd;
+// $hr-margin: rem-calc(20);
+
+// We use these to style lists
+// $list-style-position: outside;
+// $list-side-margin: 1.1rem;
+// $list-ordered-side-margin: 1.4rem;
+// $list-side-margin-no-bullet: 0;
+// $list-nested-margin: rem-calc(20);
+// $definition-list-header-weight: bold;
+// $definition-list-header-margin-bottom: .3rem;
+// $definition-list-margin-bottom: rem-calc(12);
+
+// We use these to style blockquotes
+// $blockquote-font-color: scale-color($header-font-color, $lightness: 35%);
+// $blockquote-padding: rem-calc(9 20 0 19);
+// $blockquote-border: 1px solid #ddd;
+// $blockquote-cite-font-size: rem-calc(13);
+// $blockquote-cite-font-color: scale-color($header-font-color, $lightness: 23%);
+// $blockquote-cite-link-color: $blockquote-cite-font-color;
+
+// Acronym styles
+// $acronym-underline: 1px dotted #ddd;
+
+// We use these to control padding and margin
+// $microformat-padding: rem-calc(10 12);
+// $microformat-margin: rem-calc(0 0 20 0);
+
+// We use these to control the border styles
+// $microformat-border-width: 1px;
+// $microformat-border-style: solid;
+// $microformat-border-color: #ddd;
+
+// We use these to control full name font styles
+// $microformat-fullname-font-weight: bold;
+// $microformat-fullname-font-size: rem-calc(15);
+
+// We use this to control the summary font styles
+// $microformat-summary-font-weight: bold;
+
+// We use this to control abbr padding
+// $microformat-abbr-padding: rem-calc(0 1);
+
+// We use this to control abbr font styles
+// $microformat-abbr-font-weight: bold;
+// $microformat-abbr-font-decoration: none;
 
 // Accordion
 
@@ -374,8 +485,9 @@ $fi-path: "../bower_components/foundation-icon-fonts/";
 // $form-label-pointer: pointer;
 // $form-label-font-size: rem-calc(14);
 // $form-label-font-weight: normal;
+// $form-label-line-height: 1.5;
 // $form-label-font-color: scale-color(#000, $lightness: 30%);
-// $form-label-bottom-margin: rem-calc(8);
+// $form-label-bottom-margin: 0;
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
 // $input-font-size: rem-calc(14);
@@ -385,6 +497,7 @@ $fi-path: "../bower_components/foundation-icon-fonts/";
 // $input-focus-border-color: scale-color(#fff, $lightness: -40%);
 // $input-border-style: solid;
 // $input-border-width: 1px;
+// $input-border-radius: $global-radius;
 // $input-disabled-bg: #ddd;
 // $input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
 // $input-include-glowing-effect: true;
@@ -482,7 +595,7 @@ $fi-path: "../bower_components/foundation-icon-fonts/";
 
 // Keystrokes
 
-// $include-html-type-classes: $include-html-classes;
+// $include-html-keystroke-classes: $include-html-classes;
 
 // We use these to control text styles.
 // $keystroke-font: "Consolas", "Menlo", "Courier", monospace;
@@ -795,7 +908,8 @@ $fi-path: "../bower_components/foundation-icon-fonts/";
 
 // We use these to control link styles.
 // $side-nav-link-color: $primary-color;
-// $side-nav-link-color-active: scale-color(#000, $lightness: 30%);
+// $side-nav-link-color-active: scale-color($side-nav-link-color, $lightness: 30%);
+// $side-nav-link-color-hover: scale-color($side-nav-link-color, $lightness: 30%);
 // $side-nav-font-size: rem-calc(14);
 // $side-nav-font-weight: normal;
 // $side-nav-font-family: $body-font-family;
@@ -1006,6 +1120,7 @@ $fi-path: "../bower_components/foundation-icon-fonts/";
 // $tooltip-close-font-color: #777;
 // $tooltip-font-size-sml: rem-calc(14);
 // $tooltip-radius: $global-radius;
+// $tooltip-rounded: $global-rounded;
 // $tooltip-pip-size: 5px;
 
 //
@@ -1015,8 +1130,8 @@ $fi-path: "../bower_components/foundation-icon-fonts/";
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: rgba(255,255,255,0);
-$topbar-bg: transparent;
+// $topbar-bg-color: #333;
+// $topbar-bg: $topbar-bg-color;
 
 // Height and margin
 // $topbar-height: 45px;
@@ -1027,40 +1142,44 @@ $topbar-bg: transparent;
 // $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
-$topbar-dropdown-bg: transparent;
+// $topbar-dropdown-bg: #333;
 // $topbar-dropdown-link-color: #fff;
-$topbar-dropdown-link-bg: tomato;
+// $topbar-dropdown-link-bg: #333;
 // $topbar-dropdown-link-weight: normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: #fff;
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
-$topbar-link-color: #333;
-$topbar-link-color-hover: #000;
-$topbar-link-color-active: #000;
+// $topbar-link-color: #fff;
+// $topbar-link-color-hover: #fff;
+// $topbar-link-color-active: #fff;
+// $topbar-link-color-active-hover: #fff;
 // $topbar-link-weight: normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-$topbar-link-bg-hover: transparent;
-$topbar-link-bg-active: #ccc;
-$topbar-link-bg-active-hover: scale-color(#ccc, $lightness: -14%);
+// $topbar-link-bg-hover: #272727;
+// $topbar-link-bg-active: $primary-color;
+// $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
+// $topbar-link-text-transform: none;
+// $topbar-link-padding: $topbar-height / 3;
 
 // $topbar-button-font-size: 0.75rem;
+// $topbar-button-top: 7px;
 
 // $topbar-dropdown-label-color: #777;
 // $topbar-dropdown-label-text-transform: uppercase;
 // $topbar-dropdown-label-font-weight: bold;
 // $topbar-dropdown-label-font-size: rem-calc(10);
-$topbar-dropdown-label-bg: tomato;
+// $topbar-dropdown-label-bg: #333;
 
 // Top menu icon styles
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: bold;
-$topbar-menu-link-color: #333;
-$topbar-menu-icon-color: #333;
+// $topbar-menu-link-color: #fff;
+// $topbar-menu-icon-color: #fff;
 // $topbar-menu-link-color-toggled: #888;
 // $topbar-menu-icon-color-toggled: #888;
 
@@ -1079,114 +1198,9 @@ $topbar-menu-icon-color: #333;
 // $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
 
 //
-// TYPOGRAPHY
-//
-
-// $include-html-type-classes: $include-html-classes;
-// $include-open-sans: true;
-
-// We use these to control header font styles
-// $header-font-family: join("Open Sans", $body-font-family);
-// $header-font-weight: 300;
-// $header-font-style: normal;
-// $header-font-color: #222;
-// $header-line-height: 1.4;
-// $header-top-margin: .2rem;
-// $header-bottom-margin: .5rem;
-// $header-text-rendering: optimizeLegibility;
-
-// We use these to control header font sizes
-// $h1-font-size: rem-calc(44);
-// $h2-font-size: rem-calc(37);
-// $h3-font-size: rem-calc(27);
-// $h4-font-size: rem-calc(23);
-// $h5-font-size: rem-calc(18);
-// $h6-font-size: 1rem;
-
-// These control how subheaders are styled.
-// $subheader-line-height: 1.4;
-// $subheader-font-color: scale-color($header-font-color, $lightness: 35%);
-// $subheader-font-weight: 300;
-// $subheader-top-margin: .2rem;
-// $subheader-bottom-margin: .5rem;
-
-// A general <small> styling
-// $small-font-size: 60%;
-// $small-font-color: scale-color($header-font-color, $lightness: 35%);
-
-// We use these to style paragraphs
-// $paragraph-font-family: inherit;
-// $paragraph-font-weight: normal;
-// $paragraph-font-size: 1rem;
-// $paragraph-line-height: 1.6;
-// $paragraph-margin-bottom: rem-calc(20);
-// $paragraph-aside-font-size: rem-calc(14);
-// $paragraph-aside-line-height: 1.35;
-// $paragraph-aside-font-style: italic;
-// $paragraph-text-rendering: optimizeLegibility;
-
-// We use these to style <code> tags
-// $code-color: scale-color($alert-color, $lightness: -27%);
-// $code-font-family: Consolas, 'Liberation Mono', Courier, monospace;
-// $code-font-weight: bold;
-
-// We use these to style anchors
-// $anchor-text-decoration: none;
-// $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
-
-// We use these to style the <hr> element
-// $hr-border-width: 1px;
-// $hr-border-style: solid;
-// $hr-border-color: #ddd;
-// $hr-margin: rem-calc(20);
-
-// We use these to style lists
-// $list-style-position: outside;
-// $list-side-margin: 1.1rem;
-// $list-ordered-side-margin: 1.4rem;
-// $list-side-margin-no-bullet: 0;
-// $list-nested-margin: rem-calc(20);
-// $definition-list-header-weight: bold;
-// $definition-list-header-margin-bottom: .3rem;
-// $definition-list-margin-bottom: rem-calc(12);
-
-// We use these to style blockquotes
-// $blockquote-font-color: scale-color($header-font-color, $lightness: 35%);
-// $blockquote-padding: rem-calc(9 20 0 19);
-// $blockquote-border: 1px solid #ddd;
-// $blockquote-cite-font-size: rem-calc(13);
-// $blockquote-cite-font-color: scale-color($header-font-color, $lightness: 23%);
-// $blockquote-cite-link-color: $blockquote-cite-font-color;
-
-// Acronym styles
-// $acronym-underline: 1px dotted #ddd;
-
-// We use these to control padding and margin
-// $microformat-padding: rem-calc(10 12);
-// $microformat-margin: rem-calc(0 0 20 0);
-
-// We use these to control the border styles
-// $microformat-border-width: 1px;
-// $microformat-border-style: solid;
-// $microformat-border-color: #ddd;
-
-// We use these to control full name font styles
-// $microformat-fullname-font-weight: bold;
-// $microformat-fullname-font-size: rem-calc(15);
-
-// We use this to control the summary font styles
-// $microformat-summary-font-weight: bold;
-
-// We use this to control abbr padding
-// $microformat-abbr-padding: rem-calc(0 1);
-
-// We use this to control abbr font styles
-// $microformat-abbr-font-weight: bold;
-// $microformat-abbr-font-decoration: none;
-
-//
 // VISIBILITY CLASSES
 //
 
 // $include-html-visibility-classes: $include-html-classes;
+// $include-table-visibility-classes: true;
+// $include-legacy-visibility-classes: true;

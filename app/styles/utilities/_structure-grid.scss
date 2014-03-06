@@ -30,7 +30,7 @@ $total-columns: 12 !default;
 
 // For creating container, nested, and collapsed rows.
 //
-// 
+//
 // $behavior - Any special beavior for this row? Default: false. Options: nest, collapse, nest-collapse, false.
 @mixin structure-grid-row($behavior: false) {
 
@@ -83,13 +83,13 @@ $total-columns: 12 !default;
 // $collapse - Get rid of gutter padding on column? Default: false.
 // $float - Should this float? Default: true. Options: true, false, left, right.
 @mixin structure-grid-column(
-  $columns:false, 
-  $last-column:false, 
-  $center:false, 
-  $offset:false, 
-  $push:false, 
-  $pull:false, 
-  $collapse:false, 
+  $columns:false,
+  $last-column:false,
+  $center:false,
+  $offset:false,
+  $push:false,
+  $pull:false,
+  $collapse:false,
   $float:true) {
 
   position: relative;
@@ -185,17 +185,17 @@ $total-columns: 12 !default;
 
 @include exports("grid") {
   @if $include-html-grid-classes {
-    .row {
+    .fluid-row {
       @include structure-grid-row;
 
       &.collapse {
          > .column,
          > .columns { @include structure-grid-column($collapse:true); }
 
-        .row {margin-left:0; margin-right:0;}
+        .fluid-row {margin-left:0; margin-right:0;}
       }
 
-      .row { @include structure-grid-row($behavior:nest);
+      .fluid-row { @include structure-grid-row($behavior:nest);
         &.collapse { @include structure-grid-row($behavior:nest-collapse); }
       }
     }
