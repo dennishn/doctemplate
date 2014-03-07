@@ -23,9 +23,45 @@
 	</head>
 	<body>
 
-		{{> navigation }}
+		<div class="fixed">
+    <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="/">doctemplate v.0.0.1</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+        </ul>
+
+        <section class="top-bar-section">
+            <!-- Left Nav Section -->
+            <ul class="left">
+                <li>
+                    <a href="remote-markdown.html">Remote Markdown Testpage</a>
+                </li>
+                <li>
+                	<a href="local-markdown.html">Local Markdown Testpage</a>
+                </li>
+                <li>
+                	<a href="nodes-readme.html">Nodes Readme Template</a>
+                </li>
+            </ul>
+        </section>
+    </nav>
+</div>
+
 		<div class="container">
-			{{> body }}
+			
+<script>
+Flatdoc.run({
+  fetcher: Flatdoc.file('../docs/nodes-readme.md')
+});
+</script>
+
+<div role="flatdoc">
+	<div role="flatdoc-menu" class="menubar"></div>
+	<div role="flatdoc-content" class="content"></div>
+</div>
+
 		</div>
 
 

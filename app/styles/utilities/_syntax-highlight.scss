@@ -1,0 +1,17 @@
+code {
+	color: #75715e;
+
+	.string, .number {
+		color: #948e54;
+	}
+	.init {
+		color: adjust-color($primary-color, $lightness: -10);
+	}
+	.keyword {
+		color: $primary-color;
+		font-weight: bold;
+	}
+	.comment {
+		color: adjust-color($secondary-color, $lightness: -25);
+	}
+}
