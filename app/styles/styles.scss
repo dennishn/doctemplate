@@ -6,6 +6,8 @@
 // The all powerfull cross-browser resets
 @import "normalize";
 
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic|Source+Code+Pro);
+
 //Compass Imports
 //
 
@@ -16,66 +18,67 @@
 //Mixins must NEVER be dependant on variables
 //Variables can have their values computed by mixins
 @import
-    "mixins",
-    "variables";
+	"mixins",
+	"variables";
 
 // Override Foundation variables and settings, while keeping the ability to update the core files.
 @import "foundation_variables";
 
 // Foundation Components
 @import
-    "../bower_components/foundation/scss/foundation/components/accordion",
-    "../bower_components/foundation/scss/foundation/components/alert-boxes",
-    "../bower_components/foundation/scss/foundation/components/block-grid",
-    "../bower_components/foundation/scss/foundation/components/breadcrumbs",
-    "../bower_components/foundation/scss/foundation/components/button-groups",
-    "../bower_components/foundation/scss/foundation/components/buttons",
-    "../bower_components/foundation/scss/foundation/components/clearing",
-    "../bower_components/foundation/scss/foundation/components/dropdown",
-    "../bower_components/foundation/scss/foundation/components/dropdown-buttons",
-    "../bower_components/foundation/scss/foundation/components/flex-video",
-    "../bower_components/foundation/scss/foundation/components/forms",
-    "../bower_components/foundation/scss/foundation/components/grid",
-    "../bower_components/foundation/scss/foundation/components/inline-lists",
-    "../bower_components/foundation/scss/foundation/components/joyride",
-    "../bower_components/foundation/scss/foundation/components/keystrokes",
-    "../bower_components/foundation/scss/foundation/components/labels",
-    "../bower_components/foundation/scss/foundation/components/magellan",
-    "../bower_components/foundation/scss/foundation/components/orbit",
-    "../bower_components/foundation/scss/foundation/components/pagination",
-    "../bower_components/foundation/scss/foundation/components/panels",
-    "../bower_components/foundation/scss/foundation/components/pricing-tables",
-    "../bower_components/foundation/scss/foundation/components/progress-bars",
-    "../bower_components/foundation/scss/foundation/components/reveal",
-    "../bower_components/foundation/scss/foundation/components/side-nav",
-    "../bower_components/foundation/scss/foundation/components/split-buttons",
-    "../bower_components/foundation/scss/foundation/components/sub-nav",
-    "../bower_components/foundation/scss/foundation/components/switch",
-    "../bower_components/foundation/scss/foundation/components/tables",
-    "../bower_components/foundation/scss/foundation/components/tabs",
-    "../bower_components/foundation/scss/foundation/components/thumbs",
-    "../bower_components/foundation/scss/foundation/components/tooltips",
-    "../bower_components/foundation/scss/foundation/components/offcanvas",
-    "../bower_components/foundation/scss/foundation/components/visibility";
+	"../bower_components/foundation/scss/foundation/components/accordion",
+	"../bower_components/foundation/scss/foundation/components/alert-boxes",
+	"../bower_components/foundation/scss/foundation/components/block-grid",
+	"../bower_components/foundation/scss/foundation/components/breadcrumbs",
+	"../bower_components/foundation/scss/foundation/components/button-groups",
+	"../bower_components/foundation/scss/foundation/components/buttons",
+	"../bower_components/foundation/scss/foundation/components/clearing",
+	"../bower_components/foundation/scss/foundation/components/dropdown",
+	"../bower_components/foundation/scss/foundation/components/dropdown-buttons",
+	"../bower_components/foundation/scss/foundation/components/flex-video",
+	"../bower_components/foundation/scss/foundation/components/forms",
+	"../bower_components/foundation/scss/foundation/components/grid",
+	"../bower_components/foundation/scss/foundation/components/inline-lists",
+	"../bower_components/foundation/scss/foundation/components/joyride",
+	"../bower_components/foundation/scss/foundation/components/keystrokes",
+	"../bower_components/foundation/scss/foundation/components/labels",
+	"../bower_components/foundation/scss/foundation/components/magellan",
+	"../bower_components/foundation/scss/foundation/components/orbit",
+	"../bower_components/foundation/scss/foundation/components/pagination",
+	"../bower_components/foundation/scss/foundation/components/panels",
+	"../bower_components/foundation/scss/foundation/components/pricing-tables",
+	"../bower_components/foundation/scss/foundation/components/progress-bars",
+	"../bower_components/foundation/scss/foundation/components/reveal",
+	"../bower_components/foundation/scss/foundation/components/side-nav",
+	"../bower_components/foundation/scss/foundation/components/split-buttons",
+	"../bower_components/foundation/scss/foundation/components/sub-nav",
+	"../bower_components/foundation/scss/foundation/components/switch",
+	"../bower_components/foundation/scss/foundation/components/tables",
+	"../bower_components/foundation/scss/foundation/components/tabs",
+	"../bower_components/foundation/scss/foundation/components/thumbs",
+	"../bower_components/foundation/scss/foundation/components/tooltips",
+	"../bower_components/foundation/scss/foundation/components/offcanvas",
+	"../bower_components/foundation/scss/foundation/components/visibility";
 
 // Nodes Components
 @import
-    //Utilities
-    "utilities/prototyping",
+	//Utilities
+	"utilities/prototyping",
 	"utilities/structure-grid",
 	"utilities/syntax-highlight",
-    //Plugins
-    //Base
-    "base/colors",
-    "base/animations",
-    "base/typography",
-    "base/white-space",
-    //Elements
-    //Modules
-    // "modules/",
-    //Components
-    // "components/",
-    //UI-Blocks
-    //Layouts
-    "layouts/master";
-    //Pages
+	//Plugins
+	//Base
+	"base/colors",
+	"base/animations",
+	"base/typography",
+	"base/white-space",
+	//Elements
+	//Modules
+	"modules/inset-blocks",
+	//Components
+	"components/side-navigation",
+	"components/top-bar",
+	//UI-Blocks
+	//Layouts
+	"layouts/master";
+	//Pages

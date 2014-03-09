@@ -11,17 +11,18 @@
 		<script src="bower_components/jquery/jquery.js"></script>
 		<!-- endbuild -->
 
-		<script src='http://rstacruz.github.io/flatdoc/v/0.8.0/legacy.js'></script>
- 		<script src='http://rstacruz.github.io/flatdoc/v/0.8.0/flatdoc.js'></script>
+		<!-- build:js scripts/flatdoc.js -->
+		<script src="scripts/lib/jquery.flatdoc.js"></script>
+		<!-- endbuild -->
+
 
 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 		<!-- build:css(.tmp) styles/styles.css -->
 		<link rel="stylesheet" href="styles/styles.css">
-		<link rel="stylesheet" href="bower_components/prism/themes/prism-tomorrow.css">
 		<!-- endbuild -->
 
 	</head>
-	<body>
+	<body class="doctemplate">
 
 		{{> navigation }}
 		<div class="container">
@@ -39,11 +40,8 @@
 		<script src="scripts/lib/jquery.scrollstick.js"></script>
 		<!-- endbuild -->
 
-		<script src='http://rstacruz.github.io/flatdoc/v/0.8.0/legacy.js'></script>
-  		<script src='http://rstacruz.github.io/flatdoc/v/0.8.0/flatdoc.js'></script>
-
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+		<!-- build:js scripts/main.js -->
+		<script src="scripts/main.js"></script>
+		<!-- endbuild -->
 </body>
 </html>

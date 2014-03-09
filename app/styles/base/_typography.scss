@@ -1,15 +1,14 @@
 // _typography.scss
 
 /* ------------------------------------------ *\
-    $font import
+	$font import
 \* ------------------------------------------ */
 
 // This is here you wan't to import all your font imports
 
 
-
 /* ------------------------------------------ *\
-    $Base fonts
+	$Base fonts
 \* ------------------------------------------ */
 
 /*
@@ -27,12 +26,13 @@ $h5-size:           emCalc(14) !default; // .epsilon
 $h6-size:           emCalc(12) !default; // .zeta
 
 html,body{
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-family: $header-font-family;
-    .font-secondary {
-    	font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
-    }
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	font-family: $header-font-family;
+	-webkit-font-smoothing: subpixel-antialiased;
+	.font-secondary {
+		font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+	}
 }
 
 // h1, .alpha {
@@ -65,17 +65,18 @@ html,body{
 // }
 
 p {
-    // Whatever is general for the breadtext
-    // font-size: $base-font-size; // Example font size for p ( if nothing changed = 16px )
+	// Whatever is general for the breadtext
+	// font-size: $base-font-size; // Example font size for p ( if nothing changed = 16px )
 }
 
 a {
-    // color: pink;
+	// color: pink;
 }
 
 
+
 /* ------------------------------------------ *\
-    $Icon Fonts
+	$Icon Fonts
 \* ------------------------------------------ */
 
 /*
@@ -85,7 +86,7 @@ a {
 // @include font-face(fontname, font-filename);
 
 /* ------------------------------------------ *\
-    $Aditional font styling
+	$Aditional font styling
 \* ------------------------------------------ */
 
 /*

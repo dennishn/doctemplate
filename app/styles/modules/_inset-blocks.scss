@@ -1,0 +1,73 @@
+div[role="flatdoc-content"] {
+	> pre, > blockquote {
+		@include grid-row($behavior: nest);
+		margin-bottom: $column-gutter/2;
+		background: #f7f8f8;
+		border-top: 1px solid gainsboro;
+		border-bottom: 1px solid gainsboro;
+		overflow-x: auto;
+		overflow-y: hidden;
+		-webkit-overflow-scrolling: touch;
+	}
+	> blockquote {
+		padding: $column-gutter $column-gutter $column-gutter $column-gutter*2;
+	}
+	> pre {
+		position: relative;
+		margin-left: -$column-gutter*2;
+		margin-right: -$column-gutter*2;
+		padding: $column-gutter/2 $column-gutter/2 $column-gutter/2 $column-gutter*2;
+		white-space: pre;
+		@media #{$large-up} {
+			padding: $column-gutter $column-gutter $column-gutter $column-gutter*2
+		}
+		> code {
+			padding: $column-gutter $column-gutter $column-gutter 0;
+		}
+	}
+}
+
+$color-css: #1bc3e1;
+$color-js: #ea4c89;
+$color-php: #9ae14f;
+$color-html: #c3a34c;
+div[role="flatdoc-content"] > pre > code {
+	&.lang-css,
+	&.lang-javascript,
+	&.lang-php,
+	&.lang-html {
+		&:before {
+			content: "";
+			position: absolute;
+			top: .5rem;
+			right: 1rem;
+			font-family: $body-font-family;
+			font-weight: 300;
+			color: $primary-color;
+		}
+	}
+	&.lang-css {
+		&:before {
+			content: "css";
+			color: $color-css;
+		}
+	}
+	&.lang-javascript {
+		&:before {
+			content: "js";
+			color: $color-js;
+		}
+	}
+	&.lang-php {
+		&:before {
+			content: "php";
+			color: $color-php;
+		}
+	}
+	&.lang-html {
+		&:before {
+			content: "html";
+			color: $color-html;
+		}
+	}
+}

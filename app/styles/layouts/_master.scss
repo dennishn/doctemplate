@@ -1,22 +1,110 @@
 body {
-	padding-top: $topbar-height;
+	// padding-top: $topbar-height;
+	&.f-topbar-fixed {
+		padding-top: 0;
+	}
+	&.navigation-is-open {
+		overflow: hidden;
+		margin-right: 15px;
+		&:before {
+			content: "";
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			bottom: 0;
+			background: rgba(0,0,0,0.5);
+			z-index: 50;
+		}
+	}
+}
+
+.primary-navigation {
+	position: fixed;
+	width: 100%;
+	box-shadow: 0px -15px 5px 15px rgba(0,0,0,0.5);
+	z-index: 150;
+	&.is-open {
+		top: 0;
+		bottom:0;
+		.top-bar.expanded {
+			height: 100%;
+			.top-bar-section {
+				position: absolute;
+				top: $topbar-height;
+				bottom: 0;
+				width: 100%;
+				> ul.left {
+					height: 100%;
+					overflow-y: auto;
+					-webkit-overflow-scrolling: touch;
+				}
+			}
+		}
+	}
 }
 
 .container {
 	@include structure-grid-row();
+	padding-top: $topbar-height;
+	div[role="flatdoc"] {
+		@include structure-grid-row();
+	}
 	div[role="flatdoc-menu"] {
-		@include grid-column(3);
-		> ul {
-			@include side-nav();
+		position: fixed;
+		width: 100%;
+		max-width: 320px;
+		top: $topbar-height;
+		bottom: 0;
+		left: 0;
+		background: #f0f0f0;
+		border-right: 1px solid gainsboro;
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+		z-index: 100;
+		//
+		transform: translate3d(-100%, 0, 0);
+		transition: transform .2s ease-out;
+		@media #{$large-up} {
+			@include grid-column(3, $collapse: true);
+			position: fixed;
+			// max-width: none;
+			transform: translate3d(0,0,0);
+		}
+		&.is-open {
+			transform: translate3d(0,0,0);
+			transition: transform .2s ease-out;
 		}
 		&.fixed {
-			top: $topbar-height;
+			// position: static;
+			@media #{$large-up} {
+				position: fixed;
+			}
+		}
+	}
+	.content-wrapper {
+		@include grid-column(12, $collapse: true);
+		@media #{$large-up} {
+			@include grid-column(9, $offset:3);
+			padding: 0;
 		}
 	}
 	div[role="flatdoc-content"] {
-		@include grid-column(9);
+		@include grid-column(12, $collapse: true);
+		max-width: 1000px;
+		padding:$column-gutter/2 $column-gutter $column-gutter $column-gutter;
+		background: #fff;
+		overflow-x: hidden;
 		&.menu-is-fixed {
-			@include grid-column(9, $offset:3);
+
+		}
+		@media #{$large-up} {
+			//@include grid-column(9, $offset:3);
+			padding:$column-gutter $column-gutter*2 $column-gutter*2 $column-gutter*2;
+		}
+		@media screen and (min-width: 1320px) {
+			border-left: 1px solid gainsboro;
+			border-right: 1px solid gainsboro;
 		}
 	}
 }

@@ -1,0 +1,62 @@
+// Flatdoc's default nesting level is <h1> through <h3>, this is controlled in the javascript file.
+// In this template we use 6 though and have changed the javascript file accordingly.
+$nestable-levels: 6;
+
+div[role="flatdoc-menu"] {
+	ul {
+		float: left;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			position: relative;
+			float: left;
+			width: 100%;
+		}
+	}
+	li.level-1,
+	li.level-2,
+	li.level-3 {
+	}
+	li.level-4 {
+	}
+	li.level-5, li.level-6 {
+	}
+
+	a[class*="level-"] {
+		float: left;
+		width: 100%;
+		color: #abb0b8;
+		&.active {
+			color: $primary-color;
+			border-right: 6px solid $primary-color;
+		}
+	}
+	a.level-1 {
+		padding: $column-gutter/2 $column-gutter/4;
+	}
+	a.level-2 {
+
+	}
+	a.level-3 {
+
+	}
+	a.level-2,
+	a.level-3,
+	a.level-4,
+	a.level-5,
+	a.level-6 {
+		padding-top: $column-gutter/4;
+		padding-bottom: $column-gutter/4;
+	}
+
+}
+
+@for $i from 1 through $nestable-levels {
+	div[role="flatdoc-menu"] {
+		a.level-#{$i} {
+			padding-left: #{($i*10)+10}px;
+		}
+	}
+}

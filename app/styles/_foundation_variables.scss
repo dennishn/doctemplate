@@ -43,9 +43,9 @@ $fi-path: "../bower_components/foundation-icon-fonts/";
 // $total-columns: 12;
 
 // We use these to control various global styles
-// $body-bg: #fff;
+$body-bg: #f7f8f8;
 // $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: 'Source Sans Pro', sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -58,7 +58,7 @@ $fi-path: "../bower_components/foundation-icon-fonts/";
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: #a382d4;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -75,11 +75,11 @@ $fi-path: "../bower_components/foundation-icon-fonts/";
 // $shiny-edge-active-color: rgba(#000, .2);
 
 // Media Query Ranges
-// $small-range: (0em, 40em);
-// $medium-range: (40.063em, 64em);
-// $large-range: (64.063em, 90em);
-// $xlarge-range: (90.063em, 120em);
-// $xxlarge-range: (120.063em);
+$small-range: (0em, 40em);
+$medium-range: (40.063em, 64em);
+$large-range: (64.063em, 90em);
+$xlarge-range: (90.063em, 120em);
+$xxlarge-range: (120.063em);
 
 // $screen: "only screen";
 
@@ -161,7 +161,7 @@ $fi-path: "../bower_components/foundation-icon-fonts/";
 
 // We use these to style <code> tags
 // $code-color: scale-color($alert-color, $lightness: -27%);
-// $code-font-family: Consolas, 'Liberation Mono', Courier, monospace;
+$code-font-family: 'Source Code Pro', Courier, monospace;
 // $code-font-weight: bold;
 
 // We use these to style anchors
@@ -1130,7 +1130,7 @@ $fi-path: "../bower_components/foundation-icon-fonts/";
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
+$topbar-bg-color: #1e2126;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1142,25 +1142,25 @@ $fi-path: "../bower_components/foundation-icon-fonts/";
 // $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: #333;
-// $topbar-dropdown-link-color: #fff;
-// $topbar-dropdown-link-bg: #333;
+$topbar-dropdown-bg: $topbar-bg-color;
+$topbar-dropdown-link-color: #8691a1;
+$topbar-dropdown-link-bg: $topbar-bg-color;
 // $topbar-dropdown-link-weight: normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: #fff;
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: #fff;
-// $topbar-link-color-hover: #fff;
-// $topbar-link-color-active: #fff;
+$topbar-link-color: $topbar-dropdown-link-color;
+$topbar-link-color-hover: #a5b1c4;
+$topbar-link-color-active: #a5b1c4;
 // $topbar-link-color-active-hover: #fff;
 // $topbar-link-weight: normal;
 // $topbar-link-font-size: rem-calc(13);
-// $topbar-link-hover-lightness: -10%; // Darken by 10%
-// $topbar-link-bg-hover: #272727;
-// $topbar-link-bg-active: $primary-color;
-// $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
+$topbar-link-hover-lightness: 10%; // Darken by 10%
+$topbar-link-bg-hover: darken($topbar-bg-color, 5%);
+$topbar-link-bg-active: darken($topbar-bg-color, 5%);
+$topbar-link-bg-active-hover: darken($topbar-link-bg-active, 2%);
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: $topbar-height / 3;
@@ -1178,16 +1178,16 @@ $fi-path: "../bower_components/foundation-icon-fonts/";
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: bold;
-// $topbar-menu-link-color: #fff;
-// $topbar-menu-icon-color: #fff;
-// $topbar-menu-link-color-toggled: #888;
-// $topbar-menu-icon-color-toggled: #888;
+$topbar-menu-link-color: $primary-color;
+$topbar-menu-icon-color: $primary-color;
+$topbar-menu-link-color-toggled: darken($primary-color, 10%);
+$topbar-menu-icon-color-toggled: darken($primary-color, 10%);
 
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;
 // Using rem-calc for the below breakpoint causes issues with top bar
-// $topbar-breakpoint: #{upper-bound($medium-range)}; // Change to 9999px for always mobile layout
-// $topbar-media-query: "only screen and (min-width: #{upper-bound($medium-range)})";
+$topbar-breakpoint: #{lower-bound($large-range)}; // Change to 9999px for always mobile layout
+$topbar-media-query: "only screen and (min-width: #{lower-bound($large-range)})";
 
 // Divider Styles
 // $topbar-divider-border-bottom: solid 1px  scale-color($topbar-bg-color, $lightness: 13%);
