@@ -1,5 +1,5 @@
 div[role="flatdoc-content"] {
-	> pre, > blockquote {
+	pre, blockquote {
 		@include grid-row($behavior: nest);
 		margin-bottom: $column-gutter/2;
 		background: #f7f8f8;
@@ -9,10 +9,10 @@ div[role="flatdoc-content"] {
 		overflow-y: hidden;
 		-webkit-overflow-scrolling: touch;
 	}
-	> blockquote {
+	blockquote {
 		padding: $column-gutter $column-gutter $column-gutter $column-gutter*2;
 	}
-	> pre {
+	pre {
 		position: relative;
 		margin-left: -$column-gutter*2;
 		margin-right: -$column-gutter*2;
@@ -31,11 +31,15 @@ $color-css: #1bc3e1;
 $color-js: #ea4c89;
 $color-php: #9ae14f;
 $color-html: #c3a34c;
-div[role="flatdoc-content"] > pre > code {
+div[role="flatdoc-content"] pre code {
 	&.lang-css,
+	&.language-css,
 	&.lang-javascript,
+	&.language-js,
 	&.lang-php,
-	&.lang-html {
+	&.language-php,
+	&.lang-html,
+	&.language-html {
 		&:before {
 			content: "";
 			position: absolute;
@@ -46,25 +50,29 @@ div[role="flatdoc-content"] > pre > code {
 			color: $primary-color;
 		}
 	}
-	&.lang-css {
+	&.lang-css,
+	&.language-css {
 		&:before {
 			content: "css";
 			color: $color-css;
 		}
 	}
-	&.lang-javascript {
+	&.lang-javascript,
+	&.language-js {
 		&:before {
 			content: "js";
 			color: $color-js;
 		}
 	}
-	&.lang-php {
+	&.lang-php,
+	&.language-php {
 		&:before {
 			content: "php";
 			color: $color-php;
 		}
 	}
-	&.lang-html {
+	&.lang-html,
+	&.language-html {
 		&:before {
 			content: "html";
 			color: $color-html;
