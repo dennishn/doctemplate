@@ -49,21 +49,21 @@
 </div>
 
 		<div class="container">
-			<h1>Doc Template</h1>
-<p>A static documentation system using:</p>
-<ul class="square">
-	<li>Assemble</li>
-	<li>Flatdoc</li>
-	<li>Grunt</li>
-	<li>Bower</li>
-	<li>Foundation</li>
-	<li>Foundation Font Icons</li>
-</ul>
-<h2>Big Todo's:</h2>
-<ul class="square">
-	<li>Convert this page to a .md file</li>
-	<li>Subfolder pages</li>
-</ul>
+			
+<script>
+Flatdoc.run({
+  fetcher: Flatdoc.file('../docs/1.0.general.md')
+});
+</script>
+
+<div role="flatdoc">
+	<div role="flatdoc-menu" class="menubar"></div>
+	<div class="content-wrapper">
+		<div class="row">
+			<div role="flatdoc-content" class="content"></div>
+		</div>
+	</div>
+</div>
 
 		</div>
 

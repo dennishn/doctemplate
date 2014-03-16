@@ -311,7 +311,7 @@ module.exports = function (grunt) {
 			},
 			pages: {
 				files: {
-					'<%= yeoman.app %>/': ['<%= yeoman.app %>/templates/pages/*.*', '!<%= yeoman.app %>/templates/pages/index.hbs']
+					'<%= yeoman.app %>/': ['<%= yeoman.app %>/templates/pages/**/*.*', '!<%= yeoman.app %>/templates/pages/index.hbs']
 				}
 			},
 			index: {
